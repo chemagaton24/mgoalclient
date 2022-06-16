@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mgoalclient/static/css/main.8f208a61.css",
-    "main.js": "/mgoalclient/static/js/main.58b49cb8.js",
+    "main.js": "/mgoalclient/static/js/main.7f546b87.js",
     "static/js/787.c4e7f8f9.chunk.js": "/mgoalclient/static/js/787.c4e7f8f9.chunk.js",
     "static/media/m-sports.png": "/mgoalclient/static/media/m-sports.35b4f80ffd526e581ddf.png",
     "static/media/m-sports.jpg": "/mgoalclient/static/media/m-sports.95212243704f826a050a.jpg",
@@ -69,11 +69,11 @@
     "static/media/triangle-down-red.svg": "/mgoalclient/static/media/triangle-down-red.746ae9d1134cc47cfb31.svg",
     "static/media/triangle-up-green.svg": "/mgoalclient/static/media/triangle-up-green.a83a337cb929ebe30549.svg",
     "main.8f208a61.css.map": "/mgoalclient/static/css/main.8f208a61.css.map",
-    "main.58b49cb8.js.map": "/mgoalclient/static/js/main.58b49cb8.js.map",
+    "main.7f546b87.js.map": "/mgoalclient/static/js/main.7f546b87.js.map",
     "787.c4e7f8f9.chunk.js.map": "/mgoalclient/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f208a61.css",
-    "static/js/main.58b49cb8.js"
+    "static/js/main.7f546b87.js"
   ]
 }
