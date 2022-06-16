@@ -12,7 +12,7 @@ import Demo from "./pages/Demo"
 const App = () => {
 	return (
 		<GraphQLProvider>
-			<Router>
+			<Router basename="/mgoalclient">
 				<MasterContainer>
 					<Routes>
 						<Route path="/" element={<Home />} />
