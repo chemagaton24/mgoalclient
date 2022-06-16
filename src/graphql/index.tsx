@@ -5,7 +5,8 @@ interface GraphqlProps {
 }
 
 const client = new ApolloClient({
-    uri: 'http://localhost:4000/',
+    // uri: 'http://localhost:4000/',
+    uri: 'https://pure-dawn-15287.herokuapp.com/',
     cache: new InMemoryCache()
 });
 
