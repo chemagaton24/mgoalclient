@@ -1,0 +1,13 @@
+@import "./variables";
+
+section {
+    &.padded {
+        padding: 48px 0;
+    }
+    &.white-theme {
+        background-color: $primaryLightA;
+    }
+    &.gray-theme {
+        background-color: $primaryLightC;
+    }
+}

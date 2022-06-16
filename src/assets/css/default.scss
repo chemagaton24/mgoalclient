@@ -1,0 +1,78 @@
+@import "./variables";
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: $primaryFontFamily;
+    color: $primaryDarkA;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+a {
+    color: inherit;
+
+    nav & {
+        & .text {
+            white-space: nowrap;
+        }
+    }
+}
+
+ul {
+    &.clean {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+iframe {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inner-box {
+    max-width: 1368px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.dark-theme {
+    color: #fff;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.ws-nowrap {
+    white-space: nowrap;
+}
+
+
+@import "./loading";
+@import "./icons";
+@import "./text-align";
+@import "./sections";
+@import "./headings";
+@import "./tags";
+@import "./flexbox";
+@import "./grid";
+@import "./gap";
+@import "./margin-bottom";

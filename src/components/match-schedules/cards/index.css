@@ -1,0 +1,54 @@
+.card-match-schedule {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  height: 128px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 8px #afafaf;
+          box-shadow: 1px 1px 8px #afafaf;
+  background-color: #fff;
+  background-image: url("../../../assets/images/bg/sports/soccer-vector-dark.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.card-match-schedule > .inner {
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-match-schedule > .inner.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 16px auto 24px;
+      grid-template-rows: 16px auto 24px;
+  height: 100%;
+}
+
+.card-match-schedule .league-name, .card-match-schedule .time {
+  font-size: 10px;
+}
+
+.card-match-schedule .team-icon {
+  height: 24px;
+}
+
+.card-match-schedule .team {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-match-schedule .odds-box {
+  background-color: #fff;
+  border: solid 1px #d4d6db;
+  padding: 0 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 24px;
+  line-height: 22px;
+  font-size: 12px;
+}

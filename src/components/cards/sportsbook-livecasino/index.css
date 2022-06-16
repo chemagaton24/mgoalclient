@@ -1,0 +1,21 @@
+.card-sb-lc {
+  position: relative;
+  aspect-ratio: calc(445 / 341);
+  border-radius: 8px;
+  padding-top: 13.9%;
+}
+
+.card-sb-lc .cover {
+  width: 100%;
+  max-height: 99999px;
+  margin-top: -13.9%;
+}
+
+.card-sb-lc .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 6.5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 45%;
+}

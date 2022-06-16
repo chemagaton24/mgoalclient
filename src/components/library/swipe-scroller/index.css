@@ -1,0 +1,91 @@
+.swipe-scroller {
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-scroller > .swipe-controller > .swipe-inner {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.swipe-scroller > .swipe-controller > .swipe-inner img {
+  pointer-events: none;
+}
+
+.swipe-scroller .swipe-scrollbar {
+  position: absolute;
+  background-color: #bec2ca;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  pointer-events: none;
+}
+
+.swipe-scroller .swipe-scrollbar:hover {
+  background-color: #a9aeb7;
+}
+
+.swipe-scroller.scrollbar-visibility-hide .swipe-scrollbar {
+  display: none;
+  pointer-events: none;
+}
+
+.swipe-scroller.scrollbar-visibility-hover-only:not(:hover) .swipe-scrollbar {
+  opacity: 0;
+}
+
+.swipe-scroller.scroll-x > .swipe-controller {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.swipe-scroller.scroll-x > .swipe-controller > .swipe-inner {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.swipe-scroller.scroll-x > .swipe-scrollbar {
+  left: 0;
+  bottom: 0;
+  height: 3px;
+}
+
+.swipe-scroller.scroll-y > .swipe-controller {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.swipe-scroller.scroll-y > .swipe-controller > .swipe-inner {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.swipe-scroller.scroll-y > .swipe-scrollbar {
+  right: 0;
+  top: 0;
+  width: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

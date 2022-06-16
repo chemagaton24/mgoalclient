@@ -1,0 +1,99 @@
+@import "../../assets/css/variables";
+
+.footer {
+	color: $primaryLightB;
+
+	>.row-1 {
+		background-color: $primaryDarkB;
+		padding: 16px 0 24px;
+	}
+
+	>.row-2 {
+		background-color: $primaryDarkC;
+		height: 48px;
+		line-height: 48px;
+	}
+
+	.available-payments {
+		font-size: 10px;
+
+		img {
+			height: 16px;
+			max-width: 9999px;
+		}
+	}
+
+	.providers {
+		img {
+			height: 40px;
+		}
+	}
+
+	.other-providers {
+		img {
+			height: 24px;
+			max-width: 9999px;
+		}
+	}
+
+	.menu-footer {
+		font-size: 12px;
+
+		li {
+			&:not(:last-child):after {
+				content: "|";
+				display: inline;
+				margin: 0 3px;
+			}
+		}
+
+		a {
+			font-weight: $fontWeightBold;
+		}
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.footer {
+
+		.other-providers {
+			img {
+				height: 16px;
+			}
+		}
+
+		.menu-footer {
+			font-size: 10px;
+
+			li {
+				&:not(:last-child):after {
+					margin: 0 2px;
+				}
+			}
+		}
+
+		.copyright {
+			font-size: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer {
+		>.row-2 {
+			height: unset;
+			line-height: unset;
+			padding: 16px 0;
+		}
+
+		.providers {
+			img {
+				height: 24px;
+			}
+		}
+	}
+}

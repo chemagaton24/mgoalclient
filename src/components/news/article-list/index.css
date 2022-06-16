@@ -1,0 +1,5 @@
+.article-list .banner {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}

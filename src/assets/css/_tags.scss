@@ -1,0 +1,70 @@
+@import "./_variables.scss";
+
+.tag {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: $fontWeightBold;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #bc1f00;
+
+    &.box-loading {
+        width: 32px;
+        box-sizing: border-box;
+    }
+
+    &.tag-type-a {
+        height: 16px;
+        line-height: 16px;
+        padding: 0 4px;
+    }
+
+    &.tag-type-b {
+        height: 18px;
+        line-height: 18px;
+        padding: 0 6px;
+    }
+
+    .card &:not(.free) {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        z-index: 1;
+    }
+
+    &.live-stream {
+        background-color: #bf181b;
+    }
+
+    &.other-sports {
+        background-color: #413a8f;
+    }
+
+    &.soccer {
+        background-color: #bc1f00;
+    }
+
+    &.basketball {
+        background-color: #2d8c44;
+    }
+
+    &.tennis {
+        background-color: #0a86f8;
+    }
+
+    &.e-sports {
+        background-color: #ed330e;
+    }
+
+    &.highlights {
+        background-color: #2daba2;
+    }
+}

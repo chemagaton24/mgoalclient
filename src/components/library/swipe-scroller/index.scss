@@ -1,0 +1,95 @@
+@import "../../../assets/css/variables";
+
+.swipe-scroller {
+    position: relative;
+    overflow: hidden;
+
+    >.swipe-controller {
+        >.swipe-inner {
+            user-select: none;
+            img {
+                pointer-events: none;
+            }
+        }
+    }
+
+    .swipe-scrollbar {
+        position: absolute;
+        background-color: #bec2ca;
+        border-radius: $borderRadiusA;
+        box-sizing: border-box;
+        pointer-events: none;
+
+        &:hover {
+            background-color: #a9aeb7;
+        }
+    }
+
+    &.scrollbar-visibility-hide {
+        .swipe-scrollbar {
+            display: none;
+            pointer-events: none;
+        }
+    }
+
+    &.scrollbar-visibility-hover-only:not(:hover) {
+        .swipe-scrollbar {
+            opacity: 0;
+        }
+    }
+
+    &.scroll-x {
+        >.swipe-controller {
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            >.swipe-inner {
+                display: inline-flex;
+            }
+        }
+
+        >.swipe-scrollbar {
+            left: 0;
+            bottom: 0;
+            height: 3px;
+        }
+    }
+
+    &.scroll-y {
+        >.swipe-controller {
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            >.swipe-inner {
+                display: inline-flex;
+            }
+        }
+
+        >.swipe-scrollbar {
+            right: 0;
+            top: 0;
+            width: 3px;
+        }
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,31 @@
+@import "../../assets/css/variables";
+
+header {
+    >.row-1 {
+        height: 64px;
+        line-height: 64px;
+        background-color: #222939;
+    }
+
+    >.row-2 {
+        height: 40px;
+        line-height: 40px;
+        background-color: #000;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+
+    .main-menu {
+        a {
+            text-transform: uppercase;
+            font-weight: $fontWeightBold;
+            text-decoration: none;
+            font-size: 14px;
+            &.active {
+                color: $highlightA;
+            }
+        }
+    }
+}

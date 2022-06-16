@@ -1,0 +1,28 @@
+.match-schedule-sec-mod {
+  background-image: url("../../../assets/images/bg/sports/match-sched.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 100%;
+  padding: 60px 0 32px;
+}
+
+.match-schedule-sec-mod .powered-by {
+  font-size: 14px;
+}
+
+.match-schedule-sec-mod .powered-by .logo {
+  height: 40px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .match-schedule-sec-mod {
+    background-image: unset;
+    padding: 60px 0 32px;
+  }
+  .match-schedule-sec-mod .powered-by {
+    font-size: 10px;
+  }
+  .match-schedule-sec-mod .powered-by .logo {
+    height: 24px;
+  }
+}

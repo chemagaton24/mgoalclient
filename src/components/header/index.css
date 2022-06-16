@@ -1,0 +1,26 @@
+header > .row-1 {
+  height: 64px;
+  line-height: 64px;
+  background-color: #222939;
+}
+
+header > .row-2 {
+  height: 40px;
+  line-height: 40px;
+  background-color: #000;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header .main-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header .main-menu a.active {
+  color: #f7d00e;
+}

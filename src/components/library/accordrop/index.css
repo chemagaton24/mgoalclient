@@ -1,0 +1,20 @@
+.accordrop .ad-container {
+  padding-bottom: 4px;
+}
+
+.accordrop .ad-container .ad-parent {
+  padding: 8px;
+  background-color: #afafaf;
+  cursor: pointer;
+}
+
+.accordrop .ad-container .ad-child {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 300ms;
+  transition: height 300ms;
+}
+
+.accordrop .ad-container .ad-child > .ad-inner > .ad-container {
+  padding-left: 20px;
+}

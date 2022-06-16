@@ -1,0 +1,9 @@
+.live-stream-list-cards .swipe-controller {
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .live-stream-list-cards .swipe-controller {
+    padding-right: unset;
+  }
+}

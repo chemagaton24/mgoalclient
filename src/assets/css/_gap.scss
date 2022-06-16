@@ -1,0 +1,142 @@
+$size-list: (
+    1: 1,
+    2: 4,
+    3: 8,
+    4: 12,
+    5: 16,
+    6: 18,
+    7: 24,
+    8: 32,
+    9: 40,
+    10: 48,
+);
+
+@mixin iterate() {
+    .g-unset {
+        gap: unset;
+    }
+
+    .g-col-unset {
+        column-gap: unset;
+    }
+
+    .g-row-unset {
+        row-gap: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .g-#{$val} {
+            gap: #{$val}px;
+        }
+
+        .g-col-#{$val} {
+            column-gap: #{$val}px;
+        }
+
+        .g-row-#{$val} {
+            row-gap: #{$val}px;
+        }
+    }
+}
+
+@mixin iterate1400() {
+    .mq-1400-g-unset {
+        gap: unset;
+    }
+
+    .mq-1400-g-col-unset {
+        column-gap: unset;
+    }
+
+    .mq-1400-g-row-unset {
+        row-gap: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .mq-1400-g-#{$val} {
+            gap: #{$val}px;
+        }
+
+        .mq-1400-g-col-#{$val} {
+            column-gap: #{$val}px;
+        }
+
+        .mq-1400-g-row-#{$val} {
+            row-gap: #{$val}px;
+        }
+    }
+}
+
+@mixin iterate1023() {
+    .mq-1023-g-unset {
+        gap: unset;
+    }
+
+    .mq-1023-g-col-unset {
+        column-gap: unset;
+    }
+
+    .mq-1023-g-row-unset {
+        row-gap: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .mq-1023-g-#{$val} {
+            gap: #{$val}px;
+        }
+
+        .mq-1023-g-col-#{$val} {
+            column-gap: #{$val}px;
+        }
+
+        .mq-1023-g-row-#{$val} {
+            row-gap: #{$val}px;
+        }
+    }
+}
+
+@mixin iterate767() {
+    .mq-767-g-unset {
+        gap: unset;
+    }
+
+    .mq-767-g-col-unset {
+        column-gap: unset;
+    }
+
+    .mq-767-g-row-unset {
+        row-gap: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .mq-767-g-#{$val} {
+            gap: #{$val}px;
+        }
+
+        .mq-767-g-col-#{$val} {
+            column-gap: #{$val}px;
+        }
+
+        .mq-767-g-row-#{$val} {
+            row-gap: #{$val}px;
+        }
+    }
+}
+
+@include iterate();
+
+@media only screen and (max-width: 1400px) {
+    @include iterate1400();
+}
+
+@media only screen and (max-width: 1023px) {
+    @include iterate1023();
+}
+
+@media only screen and (max-width: 767px) {
+    @include iterate767();
+}

@@ -1,0 +1,49 @@
+.upper-area-slogan {
+    background-image: linear-gradient(to bottom, #000 0%, #26324d 50%);
+    height: 518px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin-bottom: calc((262px + 48px) * -1);
+
+    .inner {
+        max-width: 668px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+    }
+
+    .list-item-labels {
+        font-size: 12px;
+        line-height: 16px;
+        color: #f4f4f6;
+
+        li {
+            min-width: 96px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .upper-area-slogan {
+        height: 316px;
+        margin-bottom: calc((146px + 48px) * -1);
+
+        h2 {
+            font-size: 20px;
+            line-height: 25px;;
+        }
+
+        .list-item-labels {
+            font-size: 8px;
+            line-height: 24px;
+
+            li {
+                min-width: 71px;
+            }
+        }
+    }
+}

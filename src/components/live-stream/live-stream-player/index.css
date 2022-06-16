@@ -1,0 +1,77 @@
+.live-stream-player > .row-1 {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.live-stream-player .competition-info {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.live-stream-player .competition,
+.live-stream-player .versus {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.live-stream-player .competition.box-loading {
+  height: 22px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.live-stream-player .versus {
+  font-weight: 700;
+}
+
+.live-stream-player .versus.box-loading {
+  height: 22px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.live-stream-player .iframe-box {
+  aspect-ratio: calc(676 / 381);
+  background-color: #000;
+}
+
+.live-stream-player .area-soccer-stream .sports-bets {
+  padding: 8px 16px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.live-stream-player .sports-bets {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.live-stream-player .sports-bets .logo {
+  max-height: 32px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .live-stream-player .competition-info {
+    padding: 12px;
+  }
+  .live-stream-player .competition,
+  .live-stream-player .versus {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .live-stream-player .sports-bets-area {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0 4px;
+  }
+  .live-stream-player .sports-bets {
+    padding: 8px 4px;
+    border-radius: 0;
+  }
+}

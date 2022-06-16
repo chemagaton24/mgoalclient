@@ -1,0 +1,92 @@
+.card-live-stream {
+  position: relative;
+  height: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-live-stream:before, .card-live-stream:after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-live-stream:before {
+  background-color: #f7d00e;
+  width: 75%;
+  left: 0;
+}
+
+.card-live-stream:after {
+  background-color: #26324d;
+  width: 25%;
+  right: 0;
+}
+
+.card-live-stream > .inner {
+  padding: 0 16px 4px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-live-stream .thumbnail {
+  position: relative;
+  aspect-ratio: calc(175 / 92);
+  background-color: #EBEBEB;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-live-stream .thumbnail:not(.box-loading) {
+  background-image: url("./noimage.jpg");
+}
+
+.card-live-stream .thumbnail > .inner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.card-live-stream .competition {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card-live-stream .competition.box-loading {
+  max-width: 250px;
+  width: 100%;
+  height: 16px;
+}
+
+.card-live-stream .versus {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.card-live-stream .versus.box-loading {
+  max-width: 230px;
+  width: 100%;
+  height: 18px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .card-live-stream {
+    height: 80px;
+  }
+  .card-live-stream .competition {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card-live-stream .versus {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

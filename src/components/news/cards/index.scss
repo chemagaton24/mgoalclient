@@ -1,0 +1,220 @@
+@import "../../../assets/css/variables";
+
+.card-news {
+    &:hover {
+        .bg-cover-holder {
+            .bg-cover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .bg-cover-holder {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: $borderRadiusC;
+        overflow: hidden;
+
+        .bg-cover {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            transition: transform 300ms;
+        }
+    }
+
+
+    .catdate {
+        font-size: 12px;
+        line-height: 16px;
+        white-space: nowrap;
+
+        &.box-loading {
+            height: 16px;
+            width: 40%;
+        }
+
+        .category {
+            text-transform: capitalize;
+        }
+    }
+
+    .title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 22px;
+        line-height: 26px;
+
+        &.box-loading {
+            height: 26px;
+        }
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 22px;
+
+        &.box-loading {
+            height: 44px;
+        }
+
+        .content-inline {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &.card-type-a {
+        max-width: 330px;
+        width: 100%;
+
+        .bg-cover-holder {
+            aspect-ratio: calc(330 / 198);
+        }
+
+        .content {
+            .content-inline {
+                -webkit-line-clamp: 2;
+            }
+        }
+    }
+
+    &.card-type-b {
+        .bg-cover-holder {
+            width: 318px;
+            height: 191px;
+        }
+
+        .content {
+            .content-inline {
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+
+    &.card-type-c {
+        .bg-cover-holder {
+            aspect-ratio: calc(676/400);
+        }
+
+        .info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+            background: -moz-linear-gradient(top, rgba(21, 29, 45, 0) 0%, rgba(21, 29, 45, 0.9) 38%, rgba(21, 29, 45, 0.9) 100%);
+            background: -webkit-linear-gradient(top, rgba(21, 29, 45, 0) 0%, rgba(21, 29, 45, 0.9) 38%, rgba(21, 29, 45, 0.9) 100%);
+            background: linear-gradient(to bottom, rgba(21, 29, 45, 0) 0%, rgba(21, 29, 45, 0.9) 38%, rgba(21, 29, 45, 0.9) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00151d2d', endColorstr='#e6151d2d', GradientType=0);
+        }
+
+        &.size-small {
+            .info {
+                .title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card-news {
+        &.card-type-b {
+            .bg-cover-holder {
+                width: 236px;
+                height: 236px;
+            }
+
+            .content {
+                .content-inline {
+                    -webkit-line-clamp: 5;
+                }
+            }
+        }
+
+        &.card-type-c {
+            &.size-small {
+                .info {
+                    .catdate {
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+
+                    .title {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .card-news {
+        .title {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .content {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &.card-type-b {
+            .bg-cover-holder {
+                width: 191px;
+                height: 191px;
+            }
+        }
+
+        &.card-type-c {
+            .info {
+                padding: 8px;
+            }
+
+            &.size-small {
+                .info {
+                    .catdate {
+                        font-size: 8px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card-news {
+        &.card-type-a {
+            max-width: unset;
+            width: unset;
+
+            .bg-cover-holder {
+                width: 96px;
+                height: 104px;
+            }
+        }
+
+        &.card-type-b {
+            .bg-cover-holder {
+                width: 96px;
+                height: 104px;
+            }
+        }
+    }
+}

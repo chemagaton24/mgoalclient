@@ -1,0 +1,29 @@
+.accordrop {
+    .ad-container {
+        padding-bottom: 4px;
+
+        // &.active {
+        //     > .ad-child {
+        //         height: auto;
+        //     }
+        // }
+
+        .ad-parent {
+            padding: 8px;
+            background-color: #afafaf;
+            cursor: pointer;
+        }
+
+        .ad-child {
+            height: 0;
+            overflow: hidden;
+            transition: height 300ms;
+
+            >.ad-inner {
+                >.ad-container {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

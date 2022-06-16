@@ -1,0 +1,58 @@
+@import "../../../assets/css/variables";
+
+.btn {
+    border: 0;
+    padding: 0 8px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $highlightA;
+    border-radius: $borderRadiusB;
+    color: $primaryDarkA;
+    font-weight: $fontWeightBold;
+    font-family: $primaryFontFamily;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: 0;
+    
+    &.btn-style-dark {
+        background-color: $primaryDarkD;
+        color: $primaryLightA;
+    }
+    
+    &.w-expand {
+        width: 100%;
+    }
+
+    &.w-120 {
+        max-width: 120px;
+        width: 100%;
+    }
+    
+    &.w-200 {
+        max-width: 200px;
+        width: 100%;
+    }
+    
+    &.w-244 {
+        max-width: 244px;
+        width: 100%;
+    }
+    
+    &.h-24 {
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+    
+    &.h-32 {
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+    
+    &.h-40 {
+        height: 40px;
+        line-height: 40px;
+    }
+}
